@@ -1,0 +1,42 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Ejercicio1;
+
+/**
+ *
+ * @author alumnot
+ */
+public class Vocales {
+    
+   String palabra;
+   
+   public Vocales(String palabra){
+   
+   this.palabra=palabra;
+   }
+    
+   
+    
+    
+    
+     int cuentavocales(){
+    String vocal="aeiouAEIOUáéíóú";
+    char cham;
+    int cuenta=0;
+    for(int i=0;i<this.palabra.length();i++){
+   for (int j=0;j<vocal.length();j++){
+       cham=this.palabra.charAt(i);
+    if(vocal.charAt(j)==cham){
+        cuenta+=1;
+    }   
+   }
+   }
+    return cuenta;
+    }
+
+    }
+    
+    
